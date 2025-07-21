@@ -1,0 +1,9 @@
+langchain
+langchain-community
+pypdf
+langchain_core
+langchain_groq
+pymongo
+streamlit
+scikit-learn
+sentence-transformers
