@@ -19,6 +19,6 @@ def match_requirements(req_skills:List):
 
     # Compute cosine similarity
     similarities = util.pytorch_cos_sim(req_skills_emb, df_skills_emb)[0]
-    df["Match_Percent"] = similarities.cpu().numpy()
+    df["Match_Percent"] = similarities.cpu().numpy()*100
 
     return df
