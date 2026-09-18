@@ -44,7 +44,7 @@ def get_resume_data(resume):
         ]
     )
 
-    llm = ChatGroq(model="llama3-8b-8192")
+    llm = ChatGroq(model="openai/gpt-oss-120b")
     parser = JsonOutputParser()
 
     chain = prompt | llm | parser
